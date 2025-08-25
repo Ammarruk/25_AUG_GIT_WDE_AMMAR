@@ -1,0 +1,96 @@
+
+
+# 📒 Correct & Clear Git Commands
+
+### 1. Check Git Version
+
+```bash
+git --version
+```
+
+👉 Shows installed Git version.
+
+---
+
+### 2. Initialize Repository with Main Branch
+
+```bash
+git init -b main
+```
+
+👉 Creates a new Git repository in the current folder.
+
+* `-b main` means the **default branch will be called `main`** (instead of `master`).
+* `main` is like the **primary line of development** where final code usually lives.
+
+---
+
+### 3. Check Status
+
+```bash
+git status
+```
+
+👉 Shows the status of files:
+
+* **Untracked** → New file, not in Git yet.
+* **Modified** → File changed after last commit.
+* **Staged** → File added with `git add`, ready to be committed.
+
+---
+
+### 4. Add Files to Staging Area
+
+```bash
+git add filename.txt
+```
+
+👉 Adds a specific file to staging.
+
+For all files:
+
+```bash
+git add .
+```
+
+---
+
+### 5. Configure User (One-Time Setup)
+
+```bash
+git config --global user.name "Ammarruk"
+git config --global user.email "ammarruk2002@gmail.com"
+```
+
+👉 Sets your identity for commits (applies to all projects on your system).
+
+If you want only for the current repo, remove `--global`.
+
+---
+
+### 6. Commit Changes
+
+```bash
+git commit -m "first commit"
+```
+
+👉 Saves a **snapshot** of staged files with a message.
+
+* Think of it as *“Save Point”* in your project.
+
+---
+
+### 7. View Commit History
+
+```bash
+git log
+```
+
+👉 Shows commit history with ID, author, date, and message.
+
+For short one-line history:
+
+```bash
+git log --oneline
+```
+
