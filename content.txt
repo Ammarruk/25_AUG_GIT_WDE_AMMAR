@@ -1,2 +1,62 @@
 Line 1 created by main branch 
 Line 2 created by main branch
+Git Commands Notes
+==================
+
+1. Check Git Version
+--------------------
+git --version
+👉 Shows installed Git version.
+
+2. Initialize Repository with Main Branch
+-----------------------------------------
+git init -b main
+👉 Creates a new Git repository in the current folder.
+- `-b main` means the default branch will be called `main` (instead of `master`).
+- `main` is like the primary line of development where final code usually lives.
+
+3. Check Status
+---------------
+git status
+👉 Shows the status of files:
+- Untracked → New file, not in Git yet.
+- Modified → File changed after last commit.
+- Staged → File added with `git add`, ready to be committed.
+
+4. Add Files to Staging Area
+----------------------------
+git add filename.txt
+👉 Adds a specific file to staging.
+
+For all files:
+git add .
+
+5. Configure User (One-Time Setup)
+----------------------------------
+git config --global user.name "Ammarruk"
+git config --global user.email "ammarruk2002@gmail.com"
+👉 Sets your identity for commits (applies to all projects on your system).
+
+(If you want only for the current repo, remove `--global`).
+
+6. Commit Changes
+-----------------
+git commit -m "first commit"
+👉 Saves a snapshot of staged files with a message.
+- Think of it as "Save Point" in your project.
+
+7. View Commit History
+----------------------
+git log
+👉 Shows commit history with ID, author, date, and message.
+
+For short one-line history:
+git log --oneline
+
+Git Workflow Summary
+--------------------
+1. git init -b main → Create repo
+2. git status → Check files
+3. git add . → Stage files
+4. git commit -m "message" → Save snapshot
+5. git log → Confirm
