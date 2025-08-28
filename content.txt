@@ -60,3 +60,40 @@ Git Workflow Summary
 3. git add . → Stage files
 4. git commit -m "message" → Save snapshot
 5. git log → Confirm
+
+
+
+
+day2 
+
+git add .   (all the files ) 
+git remote add origin "https://github.com/Ammarruk/25_AUG_GIT_WDE_AMMAR.git"
+git push origin main 
+git pull origin main 
+ls (showing the files )
+
+
+
+Tags 
+python version name whereever if u want to version it depent upon the user 
+in v 1 we make push and pull in version 2 we are created branches we are going to push this to gitbhub account next merge  main in github main main branch 
+in sub branch example : ammar woring in branch 
+v 4 commit id 
+
+
+git tag (for knowing how many tags )
+
+git tag -a v1.0 -m "first push and pull " this is for creting tags   (-a means user id email and all details will be save )
+git push --tags   (for showing the tags )
+git branch (for knowing branch its point through the current branch )
+git branch (branch name here )ammar_b1
+git checkout ammar_b1
+git ls-tree --name-only -r ammar_b1   (for showing files )
+cat (  file name content.txt)
+
+day3
+git log readme.txt
+mkdir docs_folder  (creating folder )
+echo "welcome to sript,txt file under the folder "> docs_folder/script.txt
+
+
